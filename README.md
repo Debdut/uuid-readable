@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/build-success-brightgreen.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/tests-100%25-brightgreen.svg)](https://shields.io/)
 
-> _Generate Easy to Remember, Readable UUIDs, that are **Shakespearean** gramatically correct sentences 🥳_
+> _Generate Easy to Remember, Readable UUIDs, that are **Shakespearean** and Gramatically Correct Sentences 🥳_
 
 ![Logo](/assets/logo.png)
 
@@ -21,7 +21,11 @@
 
 > _Drucill Hubert Lewse the Comer of Avera rejoices Fiann Craggy Florie and 5 hard trouts_
 
-> _Jacquette Brandtr Johm the Pectus of Barnsdall doubted Glenn Gay Gregg and 12 noisy stoats_
+> _Jacquette Brandt John the Pectus of Barnsdall doubted Glenn Gay Gregg and 12 noisy stoats_
+
+### Note 
+
+> _Think of it this way, it's impossible to remember 32 random characters in UUID, but these sentences even though hard can be remembered, and are definitely fun!_
 
 ## Installation
 
@@ -62,3 +66,8 @@ _id: {
 }
 ```
 
+## Use Cases
+
+- Customer Support
+
+You can remember parts of the id and that's enough to search it up and communicate throughout a large team. I will be using it as a secret generation for a service, and customer tickets.
