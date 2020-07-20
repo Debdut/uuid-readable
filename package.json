@@ -1,0 +1,42 @@
+{
+  "name": "readable-uuid",
+  "version": "0.0.1",
+  "description": "Readable UUID",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Debdut/readable-uuid.git"
+  },
+  "keywords": [
+    "id",
+    "uuid",
+    "shortid",
+    "readable-id",
+    "readable",
+    "sentence",
+    "english",
+    "node",
+    "js"
+  ],
+  "author": "Debdut Karmakar <iawaiponly@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Debdut/readable-uuid/issues"
+  },
+  "homepage": "https://github.com/Debdut/readable-uuid#readme",
+  "dependencies": {
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-json": "^4.1.0",
+    "mocha": "^8.0.1",
+    "rollup": "^2.21.0",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
