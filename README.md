@@ -4,6 +4,8 @@
 
 > _Generate Easy to Remember, Readable UUIDs, that are **Shakespearean** gramatically correct sentences 🥳_
 
+![Logo](/assets/logo.png)
+
 - Built on UUID v4
 - Supports any UUID version (v1, v3, v4, v5, v6)
 - Optionally pass your UUID to generate a unique sentence
