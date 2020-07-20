@@ -1,7 +1,7 @@
 {
   "name": "readable-uuid",
   "version": "0.0.1",
-  "description": "Readable UUID",
+  "description": "Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct sentences 🥳",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -16,11 +16,14 @@
     "uuid",
     "shortid",
     "readable-id",
+    "shakespeare",
+    "unique",
+    "universal",
+    "identifier",
     "readable",
     "sentence",
-    "english",
-    "node",
-    "js"
+    "uuid-v4",
+    "uuid-v5"
   ],
   "author": "Debdut Karmakar <iawaiponly@gmail.com>",
   "license": "MIT",
