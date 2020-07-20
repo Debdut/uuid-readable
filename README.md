@@ -27,6 +27,17 @@
 
 > _Think of it this way, it's impossible to remember 32 random characters in UUID, but these sentences even though hard can be remembered, and are definitely fun!_
 
+## Demo
+
+Thanks to [uuid.rocks](https://uuid.rocks), we have a [demo](https://uuid.rocks/plain?readable)
+
+```sh
+curl https://uuid.rocks/plain?readable
+# Joyce Ange Barrett the Orient of Alco killed Marlyn Hewett Lady and 11 strong bulls
+```
+
+
+
 ## Installation
 
 ```sh
