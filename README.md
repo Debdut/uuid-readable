@@ -1,4 +1,4 @@
-# readable-uuid
+# uuid-readable
 
 [![Generic badge](https://img.shields.io/badge/build-success-brightgreen.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/tests-100%25-brightgreen.svg)](https://shields.io/)
 
@@ -22,13 +22,13 @@
 ## Installation
 
 ```sh
-npm install readable-uuid --save
+npm install uuid-readable --save
 ```
 
 ## Usage
 
 ```js
-const id = require('readable-uuid')
+const id = require('uuid-readable')
 
 console.log( id() )
 // Cathleen Brooke Dieball the Monolith of Alderson reflects Arly Arnie Keenan and 18 large ants
@@ -43,7 +43,7 @@ console.log( id(uuid) )
 MongoDB
 
 ```js
-const id = require('readable-uuid')
+const id = require('uuid-readable')
 
 readable_id: {
   'type': String,

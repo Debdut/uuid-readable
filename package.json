@@ -1,5 +1,5 @@
 {
-  "name": "readable-uuid",
+  "name": "uuid-readable",
   "version": "0.0.1",
   "description": "Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct sentences 🥳",
   "main": "index.js",
@@ -28,9 +28,9 @@
   "author": "Debdut Karmakar <iawaiponly@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Debdut/readable-uuid/issues"
+    "url": "https://github.com/Debdut/uuid-readable/issues"
   },
-  "homepage": "https://github.com/Debdut/readable-uuid#readme",
+  "homepage": "https://github.com/Debdut/uuid-readable#readme",
   "dependencies": {
     "uuid": "^8.2.0"
   },
