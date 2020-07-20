@@ -19,6 +19,10 @@
 
 > _Loren Chariot Addy the Titbit of Cholame questioned Cele Garth Alda and 16 windy frogs_
 
+> _Drucill Hubert Lewse the Comer of Avera rejoices Fiann Craggy Florie and 5 hard trouts_
+
+> _Jacquette Brandtr Johm the Pectus of Barnsdall doubted Glenn Gay Gregg and 12 noisy stoats_
+
 ## Installation
 
 ```sh
@@ -31,7 +35,7 @@ npm install uuid-readable --save
 const id = require('uuid-readable')
 
 console.log( id() )
-// Cathleen Brooke Dieball the Monolith of Alderson reflects Arly Arnie Keenan and 18 large ants
+// Cathleen d Dieball the Monolith of Alderson reflects Arly Arnie Keenan and 18 large ants
 ```
 
 Pass your own UUID
