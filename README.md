@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/build-success-brightgreen.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/tests-100%25-brightgreen.svg)](https://shields.io/)
 
-> _Generate Easy to Remember, Readable UUIDs, that are **Shakespearean** and Gramatically Correct Sentences 🥳_
+> _Generate Easy to Remember, Readable UUIDs, that are **Shakespearean** and Grammatically Correct Sentences 🥳_
 
 ![Logo](/assets/logo.png)
 
@@ -10,7 +10,7 @@
 - Supports any UUID version (v1, v3, v4, v5, v6)
 - Optionally pass your UUID to generate a unique sentence
 - 128 Bit Crypto Secure
-- Gramatically correct sentences
+- Grammatically correct sentences
 - Easy to remember
 - Has a Shakespeare feeling
 - Universally Unique Identifier
