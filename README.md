@@ -27,9 +27,9 @@
 
 > _Think of it this way, it's impossible to remember 32 random characters in UUID, but these sentences even though hard can be remembered, and are definitely fun!_
 
-## Demo
+## API
 
-Thanks to [uuid.rocks](https://uuid.rocks), we have a [demo](https://uuid.rocks/plain?readable)
+Thanks to [uuid.rocks](https://uuid.rocks), we have an [API Endpoint](https://uuid.rocks/plain?readable)
 
 ```sh
 curl https://uuid.rocks/plain?readable
