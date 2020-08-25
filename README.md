@@ -82,3 +82,7 @@ _id: {
 - Customer Support
 
 You can remember parts of the id and that's enough to search it up and communicate throughout a large team. I will be using it as a secret generation for a service, and customer tickets.
+
+## Sponsors
+
+[Shakespeare Geek](http://www.shakespearegeek.com)
