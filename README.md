@@ -28,6 +28,7 @@
 ### Low Entropy 32 Bit
 
 > _11 pretty dragonflies regularly sang_
+
 > _2 fat toads happily buzzed_
 
 ### Note 
