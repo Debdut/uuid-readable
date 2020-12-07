@@ -1,4 +1,3 @@
-import animal from '../data/animal/index.js'
 import Schema from './schema.js'
 import _ from './util.js'
 
@@ -68,7 +67,7 @@ const deSentence = (s) => {
 }
 
 const valid = () => {
-  return (Schema
+  return (Schema.Full
     .map(s => s.bit)
     .reduce((a,c) => a+c)) === 128
 }
@@ -81,16 +80,16 @@ const valid = () => {
 // ]
 
 const generate = (uuid) =>  {
-  const parts = Schema
+  const parts = Schema.Full
     .map(s => s.bit)
   const words = partition(parts, uuid)
-    .map((b, i) => Schema[i].generate(b))
+    .map((b, i) => Schema.Full[i].generate(b))
   return sentence(words)
 }
 
 const inverse = (readable) => {
   const bits = deSentence(readable)
-    .map((w, i) => Schema[i].inverse(w))
+    .map((w, i) => Schema.Full[i].inverse(w))
   
   // Check -1 in words
   if (bits.indexOf(-1) >= 0) {

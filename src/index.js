@@ -1,5 +1,7 @@
 import UUID from 'uuid'
 import Readable from './readable.js'
+import LowEntropy from './low-entropy.js'
+import readable from './readable.js'
 
 const generate = (uuid) => {
   if (!uuid) {
@@ -16,4 +18,12 @@ const inverse = (readable) => {
   return UUID.stringify(Readable.inverse(readable))
 }
 
-export default { generate, inverse}
+const short = (uuid) => {
+  return LowEntropy.generate(UUID.parse(uuid))
+}
+
+const check = (readable, uuid)  => {
+  return LowEntropy.check(readable, UUID.parse(uuid))
+}
+
+export default { generate, inverse, short, check }

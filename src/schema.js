@@ -27,7 +27,7 @@ class Element {
 const Count = (n) => new Element(n, i => i+2, i => (i > 1 && i < 34) ? i - 2: -1)
 const List = (list) => new Element(list.length, i => list[i % list.length], word => list.indexOf(word))
 
-const Schema = [
+const Full = [
   List(Name.First),
   List(Name.Middle),
   List(Name.Last),
@@ -42,4 +42,12 @@ const Schema = [
   List(Animal.Noun)
 ]
 
-export default Schema
+const LowEntropy = [
+  Count(64),
+  List(Animal.Adjective),
+  List(Animal.Noun),
+  List(Grammer.Adverb),
+  List(Animal.Verb)
+]
+
+export default { Full, LowEntropy }
