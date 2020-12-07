@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/Debdut/uuid-readable#readme",
   "dependencies": {
-    "uuid": "^8.2.0"
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",

@@ -104,7 +104,6 @@ dist
 .tern-port
 
 lib/
-scripts/
 
 **/.DS_Store
 **/.vscode

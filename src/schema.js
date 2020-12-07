@@ -3,20 +3,29 @@ import Grammer from '../data/grammer/index.js'
 import Place from '../data/place/index.json'
 import Animal from '../data/animal/index.js'
 
+import _ from './util.js'
+
 class Element {
-  constructor(length, generator) {
+  constructor(length, generate, inverse) {
     this.length = length,
-    this.generator = generator
+    this.generate = generate
+    this.inv = inverse
+
     this.bit = parseInt(Math.log2(this.length))
   }
 
-  generate(i) {
-    return this.generator(i)
+  inverse (val) {
+    const byte = this.inv(val)
+    if (byte === -1) {
+      return -1
+    }
+
+    return _.toBits(byte, this.bit)
   }
 }
 
-const Count = (n) => new Element(n, i => i+2)
-const List = (list) => new Element(list.length, i => list[i % list.length])
+const Count = (n) => new Element(n, i => i+2, i => (i > 1 && i < 34) ? i - 2: -1)
+const List = (list) => new Element(list.length, i => list[i % list.length], word => list.indexOf(word))
 
 const Schema = [
   List(Name.First),
