@@ -1,6 +1,6 @@
 {
   "name": "uuid-readable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct sentences 🥳",
   "main": "index.js",
   "scripts": {
