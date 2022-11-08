@@ -1,0 +1,23 @@
+name: 'Setup'
+description: "Setups Node.js and npm to run GitHub Actions' jobs."
+runs:
+  using: 'composite'
+  steps:
+    - name: 'Setup Node.js'
+      uses: 'actions/setup-node@v3'
+      with:
+        node-version: '16.x'
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+
+    - name: 'Keep npm cache for future workflows'
+      uses: 'actions/cache@v3'
+      with:
+        key: "${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}"
+        path: '~/.npm'
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: 'Install dependencies'
+      run: 'npm ci'
+      shell: 'bash'

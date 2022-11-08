@@ -1,0 +1,46 @@
+name: 'Continuous Integrations'
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  lint:
+    name: 'Run ESLint and Prettier'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout the repository'
+        uses: 'actions/checkout@v3'
+
+      - name: 'Setup Node.js and npm'
+        uses: './.github/actions/setup'
+
+      - name: 'Execute the lint script'
+        run: 'npm run lint'
+
+
+  test:
+    name: 'Run unit tests with Jest'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout the repository'
+        uses: 'actions/checkout@v3'
+
+      - name: 'Setup Node.js and npm'
+        uses: './.github/actions/setup'
+
+      - name: 'Execute the test script'
+        run: 'npm run test'
+
+  bundle:
+    name: 'Bundle package with Rollup.js'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout the repository'
+        uses: 'actions/checkout@v3'
+
+      - name: 'Setup Node.js and npm'
+        uses: './.github/actions/setup'
+
+      - name: 'Execute the build script'
+        run: 'npm run build'
